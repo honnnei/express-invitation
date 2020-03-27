@@ -1,0 +1,14 @@
+{
+  "name": "express-invitation",
+  "version": "1.0.0",
+  "description": "Node Express Invitation exercise",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Hanna & Igor",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
