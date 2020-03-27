@@ -4,6 +4,7 @@
   "description": "Node Express Invitation exercise",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "mocha"
   },
   "author": "Hanna & Igor",
