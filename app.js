@@ -11,11 +11,23 @@ app.use(express.static(__dirname + '/public'));
 var path = require('path');
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/views/form.html'));
+
+    // async function formValues() {
+    //     let greeting = await document.getElementById("greeting").value;
+    //     console.log(greeting);
+    // } 
+
+    // formValues();
+
+
 });
 
 app.post('/invitation', function(req, res) {
     res.sendFile(path.join(__dirname + '/views/invitation.html'));
 });
+
+
+
 
 // router.get('/invitation', (req, res) => {
 //     res.render('invitation');

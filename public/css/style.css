@@ -1,5 +1,99 @@
 body {
-    background-color: lightblue;
+    background-image: url("https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background-size: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    font-family: 'Cinzel', serif;
+    height: 100%;
+    
+}
+
+header {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 45px;
+    letter-spacing: 25px;;
+}
+
+#rsvp_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    font-weight: bold;
+}
+
+.button {
+    padding: 5px;
+    font-family: 'Cinzel', serif;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+article {
+    border: 10px rgb(255, 255, 255) solid;
+    background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+    background: rgba(204, 204, 204, 0.7);
+    width: 50%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+#form_div {
+    display: flex;
+    width: 50%;
+    padding: 20px;
+    margin: 50px auto 20px auto;
+}
+
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+    /* background: rgba(204, 204, 204, 0.7); */ 
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#card-section{
+    display: none;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.message_sent {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+footer {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
 }

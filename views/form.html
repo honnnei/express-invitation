@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="/css/style.css" type="text/css" rel="stylesheet">
 </head>
+
 <body>
-    <h3>Hello World</h3>
+    <header>
+        <h1>You've Received an Invitation!</h1>
+    </header>
+    
 
-    <form method="POST" action="/invitation" novalidate>
-        Greeting:<br>
-        <input type="text" name="greeting"/><br>
-        Choose the occasion:<br>
-        <label for="birthday">Birthday</label>
-        <input type="radio" name="occasion1" id="birthday" value='birthday' checked><br>
-        <label for="party">Party</label>
-        <input type="radio" name="occasion1" id="party" value="party"><br>
-        <label for="wedding">Wedding</label>
-        <input type="radio" name="occasion1" id="wedding" value="wedding"><br>
-        <label for="message">Your message:</label><br>
-        <textarea type="text" id="message" name="message"></textarea><br>
-        <input type="submit" value="SUBMIT" id="submitForm">
+    <article>
+        <div id="form_div">
+            <form id="form" method="POST" action="/invitation" novalidate>
+                <h3 class="form_heading"></h3><br>
+                Greeting:<br>
+                <input type="text" name="greeting" id="greeting" cols="30" val="" /><br>
+                Choose the occasion:<br>
+                <select id="occasion" name="occasion"><br>
+                    <h3>Please RSVP below:</h3>
+                    <option value="birthday">Birthday</option>
+                    <option value="party">Party</option>
+                    <option value="wedding">Wedding</option><br>
+                </select><br>
+                <label for="message">Your message:</label><br>
+                <textarea type="text" id="message" name="message" cols="30" rows="4"></textarea><br>
+                <input type="submit" value="SUBMIT" id="submitButtonForm" class="btn btn-outline-light btn-lg">
+            </form>
+        </div>
 
-    </form>
 
-    <div class="card-section">
-        <h1 class="greeting-h1"></h1>
-        <h3 class="event-name"></h3>
-        <p class="message-paragraph"></p>
-    </div>
-    <script src="./app.js">    </script>
+    </article>
+    <footer>
+        <h3>Background Photo by Adi Goldstein on Unsplash</h3>
+    </footer>
+
+    <script src="javascripts\receiver.js">    </script>
 </body>
+
 </html>
