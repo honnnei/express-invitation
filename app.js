@@ -4,12 +4,17 @@ const PORT = process.env.PORT || 4001;
 const router = express.Router();
 
 app.use(express.urlencoded({ extended: false})); 
-app.use(express.static('views')); 
+// app.use(express.static('views')); 
+app.use(express.static(__dirname + '/views'));
 app.use(express.static(__dirname + '/public'));
 
 var path = require('path');
 app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname + '/form.html'));
+    res.sendFile(path.join(__dirname + '/views/form.html'));
+});
+
+app.post('/invitation', function(req, res) {
+    res.sendFile(path.join(__dirname + '/views/invitation.html'));
 });
 
 // router.get('/invitation', (req, res) => {
@@ -34,20 +39,20 @@ app.get('/', function(req, res) {
 // let image1 = document.querySelector(".first-image");
 // let image2 = document.querySelector(".second-image");
 
-document.addEventListener("DOMContentLoaded", submit);
-// let form = document.getElementById("form");
+// document.addEventListener("DOMContentLoaded", submit);
+// // let form = document.getElementById("form");
 
-// async function getInvitation() {
-//     let invitationForm = await 
+// // async function getInvitation() {
+// //     let invitationForm = await 
 
 
-function submit() {
-    submitButton.addEventListener("click", event => {
-        app.get('/', function(req, res) {
-            res.sendFile(path.join(__dirname + '/invitation.html'));
-        });
-    });
-}
+// function submit() {
+//     submitButton.addEventListener("click", event => {
+//         app.get('/invitation', function(req, res) {
+//             res.sendFile(path.join(__dirname + '/invitation.html'));
+//         });
+//     });
+// }
 
 
 // function showCard() {
